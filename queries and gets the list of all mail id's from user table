@@ -1,0 +1,5 @@
+var ms = new GlideRecord('sys_user');
+ms.query();
+while(ms.next()){
+	gs.print(ms.getValue('email'));
+}
